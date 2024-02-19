@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+      </style>
+    
+ </head>
+ <body>
+  <header>
+    <h1>Rock Paper Scissor</h1>
+  </header>    
+    <div class="score">
+      <div class="scoreBoard">
+        <div class="scoreNames">
+        <p id="player">Player</p>
+        <p id="computer">computer</p>
+        </div>
+        <div class="scoreNum" >
+        <p id="playerScore">0</p>
+        <p id="computerScore">0</p>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="selection">
+      <button onclick="pickwinner('rock',getComputerChoice())" class="rock">Rock</button>
+      <button onclick="pickwinner('paper',getComputerChoice())" class="paper">Paper</button>
+      <button onclick="pickwinner('scissor',getComputerChoice())" class="scissors">Scissors</button>
+    </div>
+    <div class="movesTitles">
+      <span>Players's Move</span>
+      <span>Computer's Move</span>
+    </div>
+      <div class="moves">
+       <div class="playerMoveImage"></div>
+      <div class="computerMoveImage"></div>
+      </div> 
+   <script src="app.js"></script>
+ </body>
+ </html>
