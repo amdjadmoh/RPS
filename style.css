@@ -8,6 +8,7 @@ font-style: normal;
 }
 body{
     background-image:url("img/cool-background.png");
+    display: fixed;
     background-repeat: no-repeat;
     background-size:1920px 1080px
 }
@@ -21,67 +22,54 @@ font-weight: 400;
 font-style: normal;
 
 }
-.scoreNames p{
-    margin: 45px 45px 45px 60px;
-    padding: 0;
-}
-.scoreNum p{
-    padding: 0;
-    margin:0px 110px
-}
-.scoreNames, .scoreNum{
-    border: 2px solid rgb(3, 3, 3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    height: 40px;
-}
-.score{
-    display: flex;
-    justify-content: center;
-    font-family: "Anta", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 35px;
-}
-.selection{
-    text-align: center;
-    margin: 30px;
-}
-.selection button{
-    width: 200px;
-    height: 100px;
-    margin: 20px;
-    font-size: 40px;
-    background-color: rgb(252, 218, 127);
-    border-radius: 10px;
-    cursor: pointer;
-    transition:0.5s ease;
-}
-.selection button:hover{
-    background-color: #FF04;
-}
-.moves{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-.playerMoveImage,.computerMoveImage{
-display: inline-block;  
-}
-.playerMoveImage img,.computerMoveImage img{
-    max-width: 200px;
-    max-height: 200px;
-    margin: 0px 300px;
-}
-.movesTitles{
-    text-align: center;   
-    margin: 5px; 
-}
 
-.movesTitles span{
-    padding: 200px;
-
+.scoreNames{
+    display: flex;
+    justify-content: space-around;
     
 }
+p{
+    display:inline
+}
+.scoreNum{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.selection{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+button{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    background-color: rgb(223, 145, 0);
+    padding: 10px;
+    color: white;    
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.movesTitles{
+    margin: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.moves{
+    display:flex;
+    justify-content: space-around;
+}
+.moves img{
+    width: 300px;
+    height: 300px;
+}
+
+
